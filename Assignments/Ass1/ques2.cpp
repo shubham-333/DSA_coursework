@@ -16,10 +16,10 @@ void sort_(vector<int> a, int size) {
 
 int main(){
 
-    #ifndef ONLINE_JUDGE
-        freopen("input.txt", "r", stdin);
-        freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     freopen("input.txt", "r", stdin);
+    //     freopen("output.txt", "w", stdout);
+    // #endif
     
     int N, K, i, sum = 0;
     cin >> N >> K;

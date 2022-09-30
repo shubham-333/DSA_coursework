@@ -44,11 +44,12 @@ Scores::~Scores() {
 void Scores::add(const GameEntry &e) {
 	int scoreToAdd = e.getScore();
 	if(maxEntries == numEntries)
-		return; // array is full, can't add more elements
+		entries[maxEntries-1] = e; // array is full, can't add more elements
 	else {
 		numEntries++; // increasing the number of entries
 		entries[numEntries-1] = e; // adding the new entry
 	}
+	return;
 }
 
 GameEntry Scores::remove(int i) {
